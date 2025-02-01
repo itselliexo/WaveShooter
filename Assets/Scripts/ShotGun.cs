@@ -57,6 +57,14 @@ public class ShotGun : Gun
     {
         return Color.yellow;
     }
+    protected new void Awake()
+    {
+        base.Awake();
+
+        SetGunToInactive();
+
+        this.enabled = false;
+    }
     private void Update()
     {
         lastFireTime += Time.deltaTime;

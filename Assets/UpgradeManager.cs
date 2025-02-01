@@ -18,6 +18,8 @@ public class Upgrade
 
     public float fireRateModifier = 1f;
     public bool unlocksNewGun = false;
+
+    public string targetGunName;
 }
 public class UpgradeManager : MonoBehaviour
 {
@@ -43,21 +45,24 @@ public class UpgradeManager : MonoBehaviour
             name = "Pistol",
             pointValue = 0,
             unlocked = false,
-            upgradeType = UpgradeType.Unlock
+            upgradeType = UpgradeType.Unlock,
+            targetGunName = "Pistol"
         });
 
         upgradeList.Add(new Upgrade {
             name = "Pistol - faster firing",
             pointValue = 2, unlocked = false,
             fireRateModifier = 0.6f,
-            upgradeType = UpgradeType.FireRateModifier
+            upgradeType = UpgradeType.FireRateModifier,
+            targetGunName = "Pistol"
         });
 
         upgradeList.Add(new Upgrade {
-            name = "Shotgun",
+            name = "ShotGun",
             pointValue = 4,
             unlocked = false,
-            upgradeType= UpgradeType.Unlock
+            upgradeType = UpgradeType.Unlock,
+            targetGunName = "ShotGun"
         });
 
         upgradeList.Add(new Upgrade {
@@ -65,7 +70,8 @@ public class UpgradeManager : MonoBehaviour
             pointValue = 6,
             unlocked = false,
             fireRateModifier = 0.6f,
-            upgradeType = UpgradeType.FireRateModifier
+            upgradeType = UpgradeType.FireRateModifier,
+            targetGunName = "ShotGun"
         });
 
         pistol = GameObject.FindGameObjectWithTag("Pistol");
@@ -87,7 +93,7 @@ public class UpgradeManager : MonoBehaviour
             }
             else if (upgrade.upgradeType == UpgradeType.FireRateModifier)
             {
-                Gun matchingGun = gunManager.guns.Find(g => g.name == upgrade.name);
+                Gun matchingGun = gunManager.guns.Find(g => g.name == upgrade.targetGunName);
                 if (matchingGun != null)
                 {
                     matchingGun.fireRate *= upgrade.fireRateModifier;

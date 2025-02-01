@@ -21,6 +21,11 @@ public class GunManager : MonoBehaviour
         {
             Debug.LogWarning("Invalid gun Index. Cannot switch guns");
         }
+        if (!guns[gunIndex].enabled)
+        {
+            Debug.Log($"{guns[gunIndex].name} is locked and cannot be switched to.");
+            return;
+        }
         //loop iterating over the gun class list and setting all of them to inactive before setting the gun at the gun index to active
         foreach (Gun gun in guns)
         {
@@ -83,6 +88,8 @@ public class GunManager : MonoBehaviour
         }
         //UnlockGun("Pistol");
         SwitchGun(0);
+
+        //Gun[] gunPrefabsInResources;
 
         if (guns == null || guns.Count == 0)
         {

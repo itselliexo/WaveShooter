@@ -26,7 +26,7 @@ public abstract class Gun : MonoBehaviour
     [SerializeField] protected bool readyToFire;
     [SerializeField] public UpgradeManager upgradeManager;
 
-    private void Awake()
+    public void Awake()
     {
         currentAmmoCount = clipSize;
         canFire = true;
