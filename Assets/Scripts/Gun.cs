@@ -7,12 +7,12 @@ public abstract class Gun : MonoBehaviour
     [SerializeField] protected Gun gun;
     [SerializeField] protected Transform firePoint;
     [SerializeField] protected float maxRange = 100f;
-    [SerializeField] protected int damage;
+    [SerializeField] public int damage;
     [SerializeField] public int clipSize;
     [SerializeField] protected int currentAmmoCount;
     [SerializeField] public int ammoReserve;
     [SerializeField] public float fireRate;
-    [SerializeField] protected float reloadTime;
+    [SerializeField] public float reloadTime;
     [SerializeField] protected float spreadAngle;
     [SerializeField] protected AudioSource audioSource;
     [SerializeField] protected AudioSource hitSource;

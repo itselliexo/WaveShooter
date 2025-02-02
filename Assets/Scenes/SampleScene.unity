@@ -1250,6 +1250,11 @@ PrefabInstance:
       propertyPath: fireRate
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 3188993793264869701, guid: ec8415ea1fac433459dfa839ccac150f,
+        type: 3}
+      propertyPath: ammoReserve
+      value: 48
+      objectReference: {fileID: 0}
     - target: {fileID: 3188993793264869705, guid: ec8415ea1fac433459dfa839ccac150f,
         type: 3}
       propertyPath: m_Name
@@ -1615,6 +1620,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fireRate
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926322896883129819, guid: 95f87c0424ce78544a1e9284deb99524,
+        type: 3}
+      propertyPath: ammoReserve
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95f87c0424ce78544a1e9284deb99524, type: 3}
@@ -2413,7 +2423,7 @@ PrefabInstance:
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
       propertyPath: damage
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
@@ -2423,7 +2433,12 @@ PrefabInstance:
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
       propertyPath: fireRate
-      value: 0.1
+      value: 0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
+        type: 3}
+      propertyPath: maxRange
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
@@ -2433,12 +2448,12 @@ PrefabInstance:
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
       propertyPath: reloadTime
-      value: 0.6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
       propertyPath: ammoReserve
-      value: 75
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
@@ -2448,7 +2463,7 @@ PrefabInstance:
     - target: {fileID: 6379325745226182101, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}
       propertyPath: spreadAngle
-      value: 0.1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8588356005678471189, guid: 88f8d38dd3902994197de105a9f9a0eb,
         type: 3}

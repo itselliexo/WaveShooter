@@ -49,7 +49,7 @@ public class GunManager : MonoBehaviour
         {
             gun.isUnlocked = true;
             //gun.enabled = true;
-            Debug.Log($"{gunName} unlocked and ready to use!");
+           // Debug.Log($"{gunName} unlocked and ready to use!");
         }
         else
         {
@@ -147,7 +147,6 @@ public class GunManager : MonoBehaviour
                 {
                     guns[activeGunIndex].Fire();
                     guns[activeGunIndex].lastFireTime = currentTime;
-                    Debug.Log(Time.time);
                 }
             }
         }

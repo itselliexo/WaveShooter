@@ -7,7 +7,10 @@ using UnityEngine;
 public enum UpgradeType
 {
     Unlock,
-    FireRateModifier
+    FireRateModifier,
+    ClipSizeModifier,
+    DamageModifier,
+    ReloadModifier
 }
 public class Upgrade
 {
@@ -15,7 +18,9 @@ public class Upgrade
     public int pointValue;
     public bool unlocked;
     public UpgradeType upgradeType;
-
+    public float clipSizeModifier = 1f;
+    public float damageModifier = 1f;
+    public float reloadModifier = 1f;
     public float fireRateModifier = 1f;
     public bool unlocksNewGun = false;
 
@@ -114,6 +119,49 @@ public class UpgradeManager : MonoBehaviour
                 {
                     Debug.LogWarning($"Gun {upgrade.name} not found in GunManager.");
                 }
+            }
+            else if (upgrade.upgradeType == UpgradeType.ClipSizeModifier)
+            {
+                Gun matchingGun = gunManager.guns.Find(g => g.name == upgrade.targetGunName);
+                if (matchingGun != null)
+                {
+                    matchingGun.clipSize = Mathf.RoundToInt(matchingGun.clipSize * upgrade.clipSizeModifier);
+                    Debug.Log($"{matchingGun.name} clip size modified by {upgrade.clipSizeModifier}.");
+                }
+                else
+                {
+                    Debug.LogWarning($"Gun {upgrade.name} not found in GunManager.");
+                }
+            }
+            else if (upgrade.upgradeType == UpgradeType.DamageModifier)
+            {
+                Gun matchingGun = gunManager.guns.Find(g => g.name == upgrade.targetGunName);
+                if (matchingGun != null)
+                {
+                    matchingGun.damage = Mathf.RoundToInt(matchingGun.damage * upgrade.damageModifier);
+                    Debug.Log($"{matchingGun.name} damage modified by {upgrade.damageModifier}.");
+                }
+                else
+                {
+                    Debug.LogWarning($"Gun {upgrade.name} not found in GunManager.");
+                }
+            }
+            else if (upgrade.upgradeType == UpgradeType.ReloadModifier)
+            {
+                Gun matchingGun = gunManager.guns.Find(g => g.name == upgrade.targetGunName);
+                if (matchingGun != null)
+                {
+                    matchingGun.reloadTime = matchingGun.reloadTime * upgrade.reloadModifier;
+                    Debug.Log($"{matchingGun.name} reload time modified by {upgrade.reloadModifier}.");
+                }
+                else
+                {
+                    Debug.LogWarning($"Gun {upgrade.name} not found in GunManager.");
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"Gun {upgrade.name} not found in GunManager.");
             }
         }
     }
