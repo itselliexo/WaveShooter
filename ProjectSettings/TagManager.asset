@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Shotgun
   - Pistol
+  - AR
   layers:
   - Default
   - TransparentFX

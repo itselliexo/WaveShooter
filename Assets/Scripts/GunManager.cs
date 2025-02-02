@@ -21,11 +21,16 @@ public class GunManager : MonoBehaviour
         {
             Debug.LogWarning("Invalid gun Index. Cannot switch guns");
         }
-        if (!guns[gunIndex].enabled)
+        if (!guns[gunIndex].isUnlocked)
         {
             Debug.Log($"{guns[gunIndex].name} is locked and cannot be switched to.");
             return;
         }
+        /*if (!guns[gunIndex].enabled)
+        {
+            Debug.Log($"{guns[gunIndex].name} is locked and cannot be switched to.");
+            return;
+        }*/
         //loop iterating over the gun class list and setting all of them to inactive before setting the gun at the gun index to active
         foreach (Gun gun in guns)
         {
@@ -42,7 +47,8 @@ public class GunManager : MonoBehaviour
         Gun gun = guns.Find(g =>  g.name == gunName);
         if (gun != null)
         {
-            gun.enabled = true;
+            gun.isUnlocked = true;
+            //gun.enabled = true;
             Debug.Log($"{gunName} unlocked and ready to use!");
         }
         else
@@ -86,10 +92,10 @@ public class GunManager : MonoBehaviour
         {
             player = GameObject.FindGameObjectWithTag("Player");
         }
-        //UnlockGun("Pistol");
+        UnlockGun("Pistol");
         SwitchGun(0);
 
-        //Gun[] gunPrefabsInResources;
+        //Gun[] gunScriptsInResources = Resources.LoadAll<Gun>("GunScripts");
 
         if (guns == null || guns.Count == 0)
         {
@@ -100,6 +106,7 @@ public class GunManager : MonoBehaviour
         {
             upgradeManager = UpgradeManager.FindObjectOfType<UpgradeManager>();
         }
+        guns[activeGunIndex].lastFireTime = 0f;
     }
 
     
@@ -107,8 +114,7 @@ public class GunManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        guns[activeGunIndex].lastFireTime += Time.deltaTime;
-
+        float currentTime = Time.time;
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SwitchGun(0);
@@ -117,11 +123,33 @@ public class GunManager : MonoBehaviour
         {
             SwitchGun(1);
         }
-
-        if (Input.GetKeyDown(KeyCode.Mouse0) && guns[activeGunIndex].canFire && guns[activeGunIndex].lastFireTime >= guns[activeGunIndex].fireRate)
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            guns[activeGunIndex].Fire();
-            guns[activeGunIndex].lastFireTime = 0f;
+            SwitchGun(2);
+        }
+
+        if (!guns[activeGunIndex].isAutomatic)
+        {
+            if (Input.GetKeyDown(KeyCode.Mouse0) && guns[activeGunIndex].canFire)
+            {
+                if (guns[activeGunIndex].lastFireTime >= guns[activeGunIndex].fireRate)
+                {
+                    guns[activeGunIndex].Fire();
+                    guns[activeGunIndex].lastFireTime = 0f;
+                }
+            }
+        }
+        else
+        {
+            if (Input.GetKey(KeyCode.Mouse0) && guns[activeGunIndex].canFire)
+            {
+                if (currentTime >= guns[activeGunIndex].lastFireTime + guns[activeGunIndex].fireRate)
+                {
+                    guns[activeGunIndex].Fire();
+                    guns[activeGunIndex].lastFireTime = currentTime;
+                    Debug.Log(Time.time);
+                }
+            }
         }
         if (Input.GetKeyDown(KeyCode.R) && guns[activeGunIndex].canReload)
         {

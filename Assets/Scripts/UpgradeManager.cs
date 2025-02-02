@@ -26,6 +26,7 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] public List<Upgrade> upgradeList = new List<Upgrade>();
     [SerializeField] GameObject pistol;
     [SerializeField] GameObject shotgun;
+    [SerializeField] GameObject ar;
     [SerializeField] WaveManager waveManager;
     [SerializeField] GunManager gunManager;
     [SerializeField] float rampingFactor;
@@ -73,9 +74,19 @@ public class UpgradeManager : MonoBehaviour
             upgradeType = UpgradeType.FireRateModifier,
             targetGunName = "ShotGun"
         });
+        upgradeList.Add(new Upgrade
+        {
+            name = "AR",
+            pointValue = 0,
+            unlocked = false,
+            fireRateModifier = 1f,
+            upgradeType = UpgradeType.Unlock,
+            targetGunName = "AR"
+        });
 
         pistol = GameObject.FindGameObjectWithTag("Pistol");
         shotgun = GameObject.FindGameObjectWithTag("Shotgun");
+        ar = GameObject.FindGameObjectWithTag("AR");
         CheckUpgrades();
     }
     public void UnlockUpgrade(int upgradeIndex)
@@ -89,7 +100,7 @@ public class UpgradeManager : MonoBehaviour
 
             if (upgrade.upgradeType == UpgradeType.Unlock)
             {
-                gunManager.UnlockGun(upgrade.name);
+                gunManager.UnlockGun(upgrade.targetGunName);
             }
             else if (upgrade.upgradeType == UpgradeType.FireRateModifier)
             {

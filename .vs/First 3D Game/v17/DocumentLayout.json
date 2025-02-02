@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Project work\\Unity\\First 3D Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|d:\\project work\\unity\\first 3d game\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|d:\\project work\\unity\\first 3d game\\assets\\gunmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\gunmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\upgrademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\upgrademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,28 +31,28 @@
       "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playernavmesh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\upgrademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\upgrademanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\gunmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\gunmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\mousemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE083AF1-91AD-6C0E-0181-A526BC4756D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mousemovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\project work\\unity\\first 3d game\\assets\\ar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\ar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\pistol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project work\\Unity\\First 3D Game\\assets\\scripts\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\shotgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project work\\Unity\\First 3D Game\\assets\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\ammopickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,23 +62,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "AR.cs",
+              "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\AR.cs",
+              "RelativeDocumentMoniker": "Assets\\AR.cs",
+              "ToolTip": "D:\\Project work\\Unity\\First 3D Game\\Assets\\AR.cs",
+              "RelativeToolTip": "Assets\\AR.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T22:14:47.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UpgradeManager.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\UpgradeManager.cs",
               "RelativeDocumentMoniker": "Assets\\UpgradeManager.cs",
               "ToolTip": "D:\\Project work\\Unity\\First 3D Game\\Assets\\UpgradeManager.cs",
               "RelativeToolTip": "Assets\\UpgradeManager.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFEAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwF4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T01:53:30.203Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "AmmoPickup.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\AmmoPickup.cs",
               "RelativeDocumentMoniker": "Assets\\AmmoPickup.cs",
@@ -86,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "WaveManager.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\WaveManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WaveManager.cs",
@@ -98,56 +114,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "GunManager.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\GunManager.cs",
               "RelativeDocumentMoniker": "Assets\\GunManager.cs",
               "ToolTip": "D:\\Project work\\Unity\\First 3D Game\\Assets\\GunManager.cs",
               "RelativeToolTip": "Assets\\GunManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB4AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAgwFsAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T20:32:47.205Z"
+              "WhenOpened": "2025-01-16T20:32:47.205Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ShotGun.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\ShotGun.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ShotGun.cs",
               "ToolTip": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\ShotGun.cs",
               "RelativeToolTip": "Assets\\Scripts\\ShotGun.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwEkAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T06:17:17.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Pistol.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\Pistol.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pistol.cs",
               "ToolTip": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\Pistol.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pistol.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T04:58:57.58Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Gun.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\Gun.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Gun.cs",
               "ToolTip": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\Gun.cs",
               "RelativeToolTip": "Assets\\Scripts\\Gun.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAQwBEAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwD4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T04:44:20.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T04:44:20.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "IDamageable.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\IDamageable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\IDamageable.cs",
@@ -159,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Health.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
@@ -171,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PlayerNavMesh.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\PlayerNavMesh.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerNavMesh.cs",
@@ -183,7 +199,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "MouseMovement.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\MouseMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MouseMovement.cs",
@@ -195,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "D:\\Project work\\Unity\\First 3D Game\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",

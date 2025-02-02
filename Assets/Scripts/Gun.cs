@@ -24,6 +24,8 @@ public abstract class Gun : MonoBehaviour
     [SerializeField] protected bool isActive = false;
     [SerializeField] protected bool reloadWhenEmpty = true;
     [SerializeField] protected bool readyToFire;
+    [SerializeField] public bool isUnlocked = false;
+    [SerializeField] public bool isAutomatic;
     [SerializeField] public UpgradeManager upgradeManager;
 
     public void Awake()
@@ -43,6 +45,24 @@ public abstract class Gun : MonoBehaviour
     {
         currentAmmoCount = clipSize;
         canFire = true;
+        
+        if (cameraTransform == null)
+        {
+            cameraTransform = Camera.main.transform;
+        }
+
+        if (upgradeManager == null)
+        {
+            upgradeManager = FindObjectOfType<UpgradeManager>();
+        }
+        if (firePoint == null)
+        {
+            firePoint = transform.Find("FirePoint");
+            if (firePoint == null)
+            {
+                Debug.LogWarning("no firepoint found");
+            }
+        }
     }
     public virtual void Fire()
     {
@@ -125,10 +145,12 @@ public abstract class Gun : MonoBehaviour
     {
         isActive = true;
         enabled = true;
+        gameObject.SetActive(true);
     }
     public void SetGunToInactive()
     {
         isActive = false;
         enabled = false;
+        gameObject.SetActive(false);
     }
 }

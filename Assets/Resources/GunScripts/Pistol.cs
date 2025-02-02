@@ -12,11 +12,15 @@ public class Pistol : Gun
     {
         return Color.red;
     }
+    private void Start()
+    {
+        isAutomatic = false;
+    }
     private void Update()
     {
         lastFireTime += Time.deltaTime;
 
-        if (lastFireTime > fireRate)
+        if (Time.time >= lastFireTime + fireRate)
         {
             readyToFire = true;
         }

@@ -65,6 +65,10 @@ public class ShotGun : Gun
 
         this.enabled = false;
     }
+    private void Start()
+    {
+        isAutomatic = false;
+    }
     private void Update()
     {
         lastFireTime += Time.deltaTime;
