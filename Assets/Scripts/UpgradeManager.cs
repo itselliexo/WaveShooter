@@ -57,7 +57,8 @@ public class UpgradeManager : MonoBehaviour
 
         upgradeList.Add(new Upgrade {
             name = "Pistol - faster firing",
-            pointValue = 2, unlocked = false,
+            pointValue = 2,
+            unlocked = false,
             fireRateModifier = 0.6f,
             upgradeType = UpgradeType.FireRateModifier,
             targetGunName = "Pistol"
@@ -69,6 +70,26 @@ public class UpgradeManager : MonoBehaviour
             unlocked = false,
             upgradeType = UpgradeType.Unlock,
             targetGunName = "ShotGun"
+        });
+
+        upgradeList.Add(new Upgrade
+        {
+            name = "Shotgun - damage increased",
+            pointValue = 6,
+            unlocked = false,
+            damageModifier = 1.5f,
+            upgradeType = UpgradeType.DamageModifier,
+            targetGunName = "ShotGun"
+        });
+
+        upgradeList.Add(new Upgrade
+        {
+            name = "Pistol - damage increase",
+            pointValue = 6,
+            unlocked = false,
+            damageModifier = 1.5f,
+            upgradeType = UpgradeType.DamageModifier,
+            targetGunName = "Pistol"
         });
 
         upgradeList.Add(new Upgrade {
@@ -88,6 +109,7 @@ public class UpgradeManager : MonoBehaviour
             upgradeType = UpgradeType.Unlock,
             targetGunName = "AR"
         });
+
 
         pistol = GameObject.FindGameObjectWithTag("Pistol");
         shotgun = GameObject.FindGameObjectWithTag("Shotgun");

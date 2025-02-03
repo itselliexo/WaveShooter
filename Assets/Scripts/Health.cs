@@ -54,6 +54,11 @@ public class Health : MonoBehaviour, IDamageable
                 upgradeManager.CheckUpgrades();
                 Destroy(gameObject);
             }
+            if (CompareTag("Player"))
+            {
+                Debug.Log("You died");
+                Destroy(gameObject);
+            }
         }
     }
     private void Update()

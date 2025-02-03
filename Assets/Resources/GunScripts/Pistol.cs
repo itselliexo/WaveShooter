@@ -7,6 +7,7 @@ public class Pistol : Gun
     public override void Fire()
     {
         base.Fire();
+        ammoReserve++;
     }
     protected override Color GetRayColour()
     {

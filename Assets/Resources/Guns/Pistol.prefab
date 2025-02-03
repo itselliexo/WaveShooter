@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2186886349835089313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2848176244823866432}
+  m_Layer: 11
+  m_Name: Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2848176244823866432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2186886349835089313}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3188993793264869706}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3188993791273497408
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,6 +91,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3188993791273497409}
+  - {fileID: 2848176244823866432}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -76,10 +107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8189dd6691267074688b0546967476a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gun: {fileID: 0}
   firePoint: {fileID: 3188993791273497409}
   maxRange: 100
   damage: 5
   clipSize: 12
+  currentAmmoCount: 0
   ammoReserve: 36
   fireRate: 0.5
   reloadTime: 1.5
@@ -88,12 +121,14 @@ MonoBehaviour:
   hitSource: {fileID: 3188993793264869707}
   cameraTransform: {fileID: 0}
   lastFireTime: 0
-  currentAmmoCount: 0
   canFire: 0
   canReload: 0
   isActive: 0
   reloadWhenEmpty: 1
   readyToFire: 0
+  isUnlocked: 0
+  isAutomatic: 0
+  upgradeManager: {fileID: 0}
 --- !u!82 &3188993793264869700
 AudioSource:
   m_ObjectHideFlags: 0

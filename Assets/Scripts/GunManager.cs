@@ -16,30 +16,33 @@ public class GunManager : MonoBehaviour
     
     private void SwitchGun(int gunIndex)
     {
-        //checks if the gun index int is invalid and throws a debug statement
-        if (gunIndex < 0 || gunIndex >= guns.Count)
+        if (player != null)
         {
-            Debug.LogWarning("Invalid gun Index. Cannot switch guns");
+            //checks if the gun index int is invalid and throws a debug statement
+            if (gunIndex < 0 || gunIndex >= guns.Count)
+            {
+                Debug.LogWarning("Invalid gun Index. Cannot switch guns");
+            }
+            if (!guns[gunIndex].isUnlocked)
+            {
+                Debug.Log($"{guns[gunIndex].name} is locked and cannot be switched to.");
+                return;
+            }
+            /*if (!guns[gunIndex].enabled)
+            {
+                Debug.Log($"{guns[gunIndex].name} is locked and cannot be switched to.");
+                return;
+            }*/
+            //loop iterating over the gun class list and setting all of them to inactive before setting the gun at the gun index to active
+            foreach (Gun gun in guns)
+            {
+                gun.SetGunToInactive();
+            }
+            guns[gunIndex].SetGunToActive();
+            //setting the local int vaiable to the arg passed in the method
+            activeGunIndex = gunIndex;
+            Debug.Log($"Switched to {guns[activeGunIndex].name}");
         }
-        if (!guns[gunIndex].isUnlocked)
-        {
-            Debug.Log($"{guns[gunIndex].name} is locked and cannot be switched to.");
-            return;
-        }
-        /*if (!guns[gunIndex].enabled)
-        {
-            Debug.Log($"{guns[gunIndex].name} is locked and cannot be switched to.");
-            return;
-        }*/
-        //loop iterating over the gun class list and setting all of them to inactive before setting the gun at the gun index to active
-        foreach (Gun gun in guns)
-        {
-            gun.SetGunToInactive();
-        }
-        guns[gunIndex].SetGunToActive();
-        //setting the local int vaiable to the arg passed in the method
-        activeGunIndex = gunIndex;
-        Debug.Log($"Switched to {guns[activeGunIndex].name}");
     }
    
     public void UnlockGun(string gunName)

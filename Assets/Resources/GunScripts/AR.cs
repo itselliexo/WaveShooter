@@ -17,13 +17,13 @@ public class AR : Gun
             }
         }
     }
-    public override void Fire()
+   /* public override void Fire()
     {
         if (Input.GetKey(KeyCode.Mouse0) && readyToFire)
         { 
             base.Fire();
         }
-    }
+    }*/
     protected override Color GetRayColour()
     {
         return Color.green;
