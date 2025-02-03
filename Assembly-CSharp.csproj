@@ -60,9 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Resources\GunScripts\AR.cs" />
     <Compile Include="Assets\Resources\GunScripts\Pistol.cs" />
-    <Compile Include="Assets\Resources\GunScripts\ShotGun.cs" />
     <Compile Include="Assets\Scripts\AmmoPickup.cs" />
-    <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\GunManager.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\IDamageable.cs" />

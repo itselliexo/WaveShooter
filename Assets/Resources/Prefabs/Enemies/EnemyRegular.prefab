@@ -56,8 +56,6 @@ GameObject:
   - component: {fileID: 3356367611610859698}
   - component: {fileID: 3356367611610859699}
   - component: {fileID: 3356367611610859700}
-  - component: {fileID: 3356367611610859696}
-  - component: {fileID: 3356367611610859697}
   - component: {fileID: 235232130790092710}
   m_Layer: 12
   m_Name: EnemyRegular
@@ -78,6 +76,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3793884205892316131}
+  - {fileID: 4961665234497449218}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -119,21 +118,74 @@ MonoBehaviour:
   evasionDistance: 5
   evasionUpdateInterval: 0.4
   blineDistance: 6
---- !u!33 &3356367611610859696
+  isStopped: 0
+--- !u!114 &235232130790092710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356367611610859701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b892add747194ac40a278a97df39a9e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 0
+  maxHealth: 15
+  healthRegen: 1
+  regenDelay: 3
+  ammoDrop: {fileID: 2164765609332778018, guid: 73d0f262d9c088f4a92c4040d478c745,
+    type: 3}
+  waveManager: {fileID: 0}
+  upgradeManager: {fileID: 0}
+--- !u!1 &5174451254323240977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4961665234497449218}
+  - component: {fileID: 8201086725256487799}
+  - component: {fileID: 6541256066456988359}
+  m_Layer: 12
+  m_Name: Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4961665234497449218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174451254323240977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.812, z: 0}
+  m_LocalScale: {x: 0.3, y: 0.79, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 3356367611610859698}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8201086725256487799
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3356367611610859701}
-  m_Mesh: {fileID: -2432090755550338912, guid: 7ee15874e1e36294786e2a75bd9ead84, type: 3}
---- !u!23 &3356367611610859697
+  m_GameObject: {fileID: 5174451254323240977}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6541256066456988359
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3356367611610859701}
+  m_GameObject: {fileID: 5174451254323240977}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -166,23 +218,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &235232130790092710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3356367611610859701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b892add747194ac40a278a97df39a9e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 15
-  healthRegen: 1
-  regenDelay: 3
-  ammoDrop: {fileID: 2164765609332778018, guid: 73d0f262d9c088f4a92c4040d478c745,
-    type: 3}
-  waveManager: {fileID: 0}
-  upgradeManager: {fileID: 0}

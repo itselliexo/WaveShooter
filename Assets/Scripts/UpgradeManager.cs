@@ -57,7 +57,8 @@ public class UpgradeManager : MonoBehaviour
 
         upgradeList.Add(new Upgrade {
             name = "Pistol - faster firing",
-            pointValue = 2, unlocked = false,
+            pointValue = 2,
+            unlocked = false,
             fireRateModifier = 0.6f,
             upgradeType = UpgradeType.FireRateModifier,
             targetGunName = "Pistol"
